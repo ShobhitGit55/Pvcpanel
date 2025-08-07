@@ -47,6 +47,53 @@
       border: 0;
       height: 300px;
     }
+
+  .service-box {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+
+  .service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  .scroll-banner-wrapper {
+    overflow: hidden;
+    background: #fff;
+    padding: 10px 0;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+  }
+
+  .scroll-banner {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-banner 20s linear infinite;
+  }
+
+  .scroll-banner img {
+    height: 50px;
+    margin: 0 30px;
+    vertical-align: middle;
+  }
+
+  @keyframes scroll-banner {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+
+
   </style>
 </head>
 <body>
@@ -77,26 +124,35 @@
     </div>
   </div>
 
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">About Us</h2>
-      <p class="text-center">
-        At <strong>Krishna Wood and PVC</strong>, we specialize in delivering premium-grade PVC and wood products 
-        that combine durability, style, and affordability. Whether it's for industrial use, home interiors, or 
-        commercial applications, our range is crafted to meet the highest quality standards.
-      </p>
-      <p class="text-center">
-        With over 10 years of experience, we have earned a reputation for trust and craftsmanship. Our team ensures 
-        timely delivery, professional guidance, and custom solutions tailored to your requirements. We believe in 
-        sustainability and only use materials that are eco-friendly and long-lasting.
-      </p>
-      <p class="text-center">
-        Visit us to explore PVC panels, wooden doors, modular kitchen fittings, and more. We proudly serve customers 
-        across Delhi with a commitment to excellence.
-      </p>
+
+<!-- OUR SERVICES SECTION -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <h5>Custom PVC Paneling</h5>
+          <p>We offer PVC panel installation for walls and ceilings with modern designs.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <h5>Wooden Furniture Making</h5>
+          <p>Design and crafting of wooden cabinets, wardrobes, and modular furniture.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <h5>False Ceiling Solutions</h5>
+          <p>Premium false ceiling services with PVC and wooden textures for homes and offices.</p>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- Products Section -->
   <section id="products" class="py-5 bg-light">
@@ -133,6 +189,29 @@
       </div>
     </div>
   </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center">
+        At <strong>Krishna Wood and PVC</strong>, we specialize in delivering premium-grade PVC and wood products 
+        that combine durability, style, and affordability. Whether it's for industrial use, home interiors, or 
+        commercial applications, our range is crafted to meet the highest quality standards.
+      </p>
+      <p class="text-center">
+        With over 10 years of experience, we have earned a reputation for trust and craftsmanship. Our team ensures 
+        timely delivery, professional guidance, and custom solutions tailored to your requirements. We believe in 
+        sustainability and only use materials that are eco-friendly and long-lasting.
+      </p>
+      <p class="text-center">
+        Visit us to explore PVC panels, wooden doors, modular kitchen fittings, and more. We proudly serve customers 
+        across Delhi with a commitment to excellence.
+      </p>
+    </div>
+  </section>
+
 
   <!-- Contact Info Section -->
   <section id="contact" class="py-5">
